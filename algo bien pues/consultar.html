@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consultar Usuario</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    input, label {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      background-color: #FF9800;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: #F57C00;
+    }
+  </style>
+</head>
+<body>
+
+<form action="consultar.php" method="POST">
+  <h2>Consultar Usuario</h2>
+
+  <label for="telefono">Teléfono:</label>
+  <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}">
+  
+  <input type="submit" value="Consultar">
+</form>
+
+</body>
+</html>
