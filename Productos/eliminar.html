@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eliminar Producto</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+      input,
+      label {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      input[type="submit"] {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"]:hover {
+        background-color: #e53935;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="eliminar_producto.php" method="POST">
+      <h2>Eliminar Producto</h2>
+
+      <label for="id">ID del producto a eliminar:</label>
+      <input type="text" id="id" name="id" required />
+
+      <input type="submit" value="Eliminar Producto" />
+    </form>
+  </body>
+</html>
