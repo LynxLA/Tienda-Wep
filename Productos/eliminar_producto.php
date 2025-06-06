@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $usuario = "root";
-$contrasena = "123";
+$contrasena = "";
 $bd = "productos";
 
 // Crear conexión

@@ -2,7 +2,7 @@
 // Configuración de la base de datos
 $host = "localhost";
 $usuario = "root";       // tu usuario de MySQL
-$clave = "123";             // tu contraseña de MySQL
+$clave = "";             // tu contraseña de MySQL
 $bd = "usuarios_db";     // nombre de tu base de datos
 
 // Crear conexión
